@@ -1,0 +1,32 @@
+name: BlockAI
+version: '1.0-SNAPSHOT'
+main: io.romainmiras.blockai.Main
+api-version: '1.21'
+description: A plugin that adds AI to Minecraft
+authors:
+  - Romain Miras
+contributors:
+  - Romain Miras
+  - Mathias Foucher
+website: https://github.com/RomainMIRAS/BlockAI
+load: POSTWORLD
+default-permission: true
+commands:
+  blockai:
+    description: Main command for BlockAI
+    usage: /<command> <subcommand> [args]
+    aliases:
+      - bai
+    permission: blockai.command
+    permission-message: You do not have permission to use this command
+    children:
+      help:
+        description: Display the help message
+        usage: /<command> help
+        permission: blockai.command.help
+        permission-message: You do not have permission to use this command
+      reload:
+        description: Reload the plugin
+        usage: /<command> reload
+        permission: blockai.command.reload
+        permission-message: You do not have permission to use this command
