@@ -19,6 +19,8 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.google.code.gson:gson:2.8.8'
 }
 
 def targetJavaVersion = 21
@@ -50,7 +52,7 @@ processResources {
 
 tasks.register('copyPlugin', Copy) {
     from tasks.named('jar') // Utilise la tâche 'jar' pour localiser le fichier
-    into 'C:\\Users\\Romain\\Desktop\\Dossier\\Minecraft serveur test\\Paper Server\\plugins' // Copie le fichier dans le dossier des plugins du serveur
+    into '.\\server\\plugins' // Copie le fichier dans le dossier des plugins du serveur
 }
 
 tasks.named('build').configure {

@@ -117,3 +117,26 @@ runs/
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+
+# Minecraft server
+
+server/logs/
+server/world/
+server/world_nether/
+server/world_the_end/
+
+
+
+server/usercache.json
+
+server/ops.json
+
+server/.console_history
+
+server/banned-ips.json
+
+server/banned-players.json
+
+server/permissions.yml
+
+server/whitelist.json
